@@ -34,6 +34,7 @@ body {
 }
 .navbar .nav-link {
   color: var(--text-light) !important;
+  transition: color 0.3s ease;
 }
 .navbar .nav-link:hover {
   color: var(--accent) !important;
@@ -42,11 +43,16 @@ body {
   background-color: var(--accent);
   border: none;
   border-radius: 30px;
+  transition: transform 0.3s ease;
+}
+.btn-accent:hover {
+  transform: scale(1.05);
 }
 .btn-outline-accent {
   border: 2px solid var(--accent);
   color: var(--accent);
   border-radius: 30px;
+  transition: all 0.3s ease;
 }
 .btn-outline-accent:hover {
   background-color: var(--accent);
@@ -126,6 +132,9 @@ body {
 }
 
 /* Carrusel */
+.carousel-inner {
+  transition: transform 2s ease-in-out; /* transición lenta */
+}
 .carousel-item img {
   max-height: 350px;
   object-fit: cover;
@@ -144,14 +153,70 @@ body {
 /* Galería grilla */
 #galeria img {
   width: 100%;
-  height: auto;
+  height: 250px; /* altura fija para que no se estiren en celulares */
   object-fit: cover;
   display: block;
   border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+#galeria img:hover {
+  transform: scale(1.05);
+}
+
+/* Botón flotante WhatsApp */
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #25d366;
+  color: white;
+  border-radius: 50%;
+  width: 55px;
+  height: 55px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 28px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+  z-index: 999;
+  transition: transform 0.3s ease;
+}
+.whatsapp-float:hover {
+  transform: scale(1.1);
+  background-color: #1ebe5d;
+}
+
+/* Próximas fechas */
+.event-card {
+  background-color: var(--darker);
+  border-left: 4px solid var(--accent);
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 6px;
+  transition: transform 0.3s ease;
+}
+.event-card:hover {
+  transform: translateX(5px);
 }
 
 /* Footer */
 footer {
   background-color: var(--black-true);
   color: var(--text-muted);
+}
+.video-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 9999px;
+  font-size: 1.25rem;
+  pointer-events: none;
+  transition: background-color 0.3s ease;
+}
+.position-relative:hover .video-overlay {
+  background-color: rgba(0, 0, 0, 0.8);
 }

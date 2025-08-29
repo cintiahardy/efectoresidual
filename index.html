@@ -26,6 +26,7 @@
           <li class="nav-item"><a class="nav-link" href="#integrantes">Integrantes</a></li>
           <li class="nav-item"><a class="nav-link" href="#biografia">Biografía</a></li>
           <li class="nav-item"><a class="nav-link" href="#galeria">Galería</a></li>
+          <li class="nav-item"><a class="nav-link" href="#fechas">Fechas</a></li>
           <li class="nav-item"><a class="nav-link" href="#propuesta">Propuesta</a></li>
           <li class="nav-item"><a class="nav-link btn btn-accent ms-lg-3 text-dark fw-semibold px-3" href="#contacto">Contrataciones</a></li>
         </ul>
@@ -124,7 +125,7 @@
     </div>
   </section>
 
-<!-- BIOGRAFÍA -->
+  <!-- BIOGRAFÍA -->
   <section id="biografia" class="py-5 section-dark">
     <div class="container">
       <h2 class="section-title">Biografía</h2>
@@ -155,8 +156,8 @@
     <div class="container">
       <h2 class="section-title text-center mb-4">Galería</h2>
 
-      <!-- Carrusel con efecto fade -->
-      <div id="carouselGaleria" class="carousel slide carousel-fade mb-5" data-bs-ride="carousel">
+      <!-- Carrusel con efecto fade y autoplay -->
+      <div id="carouselGaleria" class="carousel slide carousel-fade mb-5" data-bs-ride="carousel" data-bs-interval="5000">
         <div class="carousel-inner rounded shadow">
           <div class="carousel-item active">
             <img src="img/foto 3.jpg" class="d-block w-100 img-fluid" alt="Foto 1 banda">
@@ -194,6 +195,48 @@
           <img src="img/foto 5.jpg" class="img-fluid rounded shadow-sm" alt="Foto 4 banda" loading="lazy">
         </div>
       </div>
+    </div>
+  </section>
+
+<!-- VÍDEOS DESTACADOS -->
+<section id="videos" class="py-5 section-dark">
+  <div class="container">
+    <h2 class="section-title text-center mb-4">Videos</h2>
+    <div class="row g-4 justify-content-center">
+      
+      <!-- Primer video -->
+      <div class="col-12 col-md-6 col-lg-5 position-relative">
+        <a href="https://www.youtube.com/watch?v=alKZTsUnZlc" target="_blank" rel="noopener" class="d-block position-relative">
+          <img src="https://img.youtube.com/vi/alKZTsUnZlc/hqdefault.jpg"
+               alt="Efecto Residual - Video 1"
+               class="img-fluid rounded shadow-sm w-100">
+          <span class="video-overlay">▶ Ver en YouTube</span>
+        </a>
+      </div>
+
+      <!-- Segundo video -->
+      <div class="col-12 col-md-6 col-lg-5 position-relative">
+        <a href="https://www.youtube.com/watch?v=oELs5baal8A" target="_blank" rel="noopener" class="d-block position-relative">
+          <img src="https://img.youtube.com/vi/oELs5baal8A/hqdefault.jpg"
+               alt="Efecto Residual - Video 2"
+               class="img-fluid rounded shadow-sm w-100">
+          <span class="video-overlay">▶ Ver en YouTube</span>
+        </a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+  <!-- PRÓXIMAS FECHAS -->
+  <section id="fechas" class="py-5 section-dark">
+    <div class="container">
+      <h2 class="section-title text-center mb-4">Próximas fechas</h2>
+      <div class="event-card">
+        <strong>📍 Lugar:</strong> A definir <br>
+        <strong>📅 Fecha:</strong> Muy pronto
+      </div>
+      <!-- Podés duplicar .event-card para nuevas fechas -->
     </div>
   </section>
 
@@ -246,6 +289,11 @@
   <footer class="py-4 bg-black-true text-center text-muted-70">
     <small>© <span id="y"></span> Efecto Residual — Sitio oficial</small>
   </footer>
+
+  <!-- Botón flotante WhatsApp -->
+  <a href="https://wa.me/543482446311" class="whatsapp-float" target="_blank" aria-label="WhatsApp">
+    💬
+  </a>
 
   <script>
     document.getElementById('y').textContent = new Date().getFullYear();
