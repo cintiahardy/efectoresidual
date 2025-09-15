@@ -6,16 +6,19 @@
   <title>Efecto Residual — Sitio Oficial</title>
   <meta name="description" content="Banda tributo de rock: Efecto Residual. Fechas, biografía, integrantes y contrataciones." />
 
+  <!-- Favicon -->
+  <link rel="icon" href="img/logo.jpeg" type="image/jpeg">
+
   <!-- Bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 
-  <!-- Font Awesome (íconos) -->
+  <!-- Font Awesome (íconos oficiales) -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
-  <!-- AOS (scroll animations) -->
+  <!-- AOS (animaciones scroll) -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
 
-  <!-- Tu CSS -->
+  <!-- CSS -->
   <link rel="stylesheet" href="styles.css">
 </head>
 
@@ -26,10 +29,10 @@
   </div>
 
   <!-- NAV -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top border-bottom border-accent" role="navigation" aria-label="Main navigation">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top border-bottom border-accent">
     <div class="container">
       <a class="navbar-brand fw-bold" href="#inicio">Efecto Residual</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navER" aria-controls="navER" aria-expanded="false" aria-label="Mostrar menú">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navER">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navER">
@@ -49,14 +52,14 @@
     </div>
   </nav>
 
-  <!-- HERO / INICIO -->
-  <header id="inicio" class="hero d-flex align-items-center" role="banner">
+  <!-- HERO -->
+  <header id="inicio" class="hero d-flex align-items-center">
     <div class="container text-center">
       <img class="hero-logo mb-3 img-fluid" src="img/logo.jpeg" alt="Logo Efecto Residual" />
       <h1 class="display-5 fw-bold">El eco de una historia que sigue sonando</h1>
       <p class="lead text-muted-70">Tributo a Soda Stereo & Gustavo Cerati + clásicos del rock nacional e internacional.</p>
       <a href="#contacto" class="btn btn-accent btn-lg text-dark fw-semibold mt-2">Reservar fecha</a>
-      <div class="heartbeat mt-4" aria-hidden="true"></div>
+      <div class="heartbeat mt-4"></div>
     </div>
   </header>
 
@@ -66,14 +69,14 @@
       <div class="row align-items-center g-4">
         <div class="col-lg-6">
           <h2 class="section-title">¿Quiénes somos?</h2>
-          <p class="mb-0">
+          <p>
             Somos una banda tributo que rinde homenaje al legado inmortal de una de las agrupaciones más influyentes del rock en español.
             Con puesta en escena poderosa, fidelidad sonora y entrega total, recreamos la energía y el espíritu de los conciertos que marcaron generaciones.
           </p>
         </div>
         <div class="col-lg-6">
           <div class="ratio ratio-16x9 rounded-4 overflow-hidden shadow-sm">
-            <img src="img/logo2.jpeg" alt="Efecto Residual en vivo" class="img-fluid w-100 h-100 object-fit-cover" loading="lazy">
+            <img src="img/logo2.jpeg" alt="Efecto Residual en vivo" class="img-fluid object-fit-cover" loading="lazy">
           </div>
         </div>
       </div>
@@ -81,60 +84,56 @@
   </section>
 
   <!-- INTEGRANTES -->
-  <section id="integrantes" class="py-5 bg-darker">
-    <div class="container" data-aos="fade-up">
+  <section id="integrantes" class="py-5 bg-darker" data-aos="fade-up">
+    <div class="container">
       <h2 class="section-title text-center mb-4">Integrantes</h2>
       <div class="row g-4">
-        <div class="col-12 col-md-6 col-lg-4" data-aos="zoom-in">
-          <div class="card card-member h-100 text-center">
-            <img src="img/ale 2.jpg" class="card-img-top rounded-circle p-3 img-fluid" alt="Rhiner, Alexis" loading="lazy">
+        <!-- Repite estructura por cada integrante -->
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card card-member text-center">
+            <img src="img/ale 2.jpg" class="card-img-top rounded-circle p-3" alt="Rhiner, Alexis">
             <div class="card-body">
-              <h3 class="h5 fw-bold mb-1">Rhiner, Alexis</h3>
-              <p class="mb-0 text-muted-70">Voz y guitarra</p>
+              <h3 class="h5 fw-bold">Rhiner, Alexis</h3>
+              <p>Voz y guitarra</p>
             </div>
           </div>
         </div>
-
-        <div class="col-12 col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="80">
-          <div class="card card-member h-100 text-center">
-            <img src="img/gemelo 1.jpeg" class="card-img-top rounded-circle p-3 img-fluid" alt="Giménez, Jerónimo" loading="lazy">
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card card-member text-center">
+            <img src="img/gemelo 1.jpeg" class="card-img-top rounded-circle p-3" alt="Giménez, Jerónimo">
             <div class="card-body">
-              <h3 class="h5 fw-bold mb-1">Giménez, Jerónimo</h3>
-              <p class="mb-0 text-muted-70">Guitarra</p>
+              <h3 class="h5 fw-bold">Giménez, Jerónimo</h3>
+              <p>Guitarra</p>
             </div>
           </div>
         </div>
-
-        <div class="col-12 col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="160">
-          <div class="card card-member h-100 text-center">
-            <img src="img/gemelo2.jpg" class="card-img-top rounded-circle p-3 img-fluid" alt="Giménez, Gerardo" loading="lazy">
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card card-member text-center">
+            <img src="img/gemelo2.jpg" class="card-img-top rounded-circle p-3" alt="Giménez, Gerardo">
             <div class="card-body">
-              <h3 class="h5 fw-bold mb-1">Giménez, Gerardo</h3>
-              <p class="mb-0 text-muted-70">Bajo</p>
+              <h3 class="h5 fw-bold">Giménez, Gerardo</h3>
+              <p>Bajo</p>
             </div>
           </div>
         </div>
-
-        <div class="col-12 col-md-6 col-lg-4" data-aos="zoom-in">
-          <div class="card card-member h-100 text-center">
-            <img src="img/piano.jpeg" class="card-img-top rounded-circle p-3 img-fluid" alt="Falcón, Gustavo" loading="lazy">
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card card-member text-center">
+            <img src="img/piano.jpeg" class="card-img-top rounded-circle p-3" alt="Falcón, Gustavo">
             <div class="card-body">
-              <h3 class="h5 fw-bold mb-1">Falcón, Gustavo</h3>
-              <p class="mb-0 text-muted-70">Teclado</p>
+              <h3 class="h5 fw-bold">Falcón, Gustavo</h3>
+              <p>Teclado</p>
             </div>
           </div>
         </div>
-
-        <div class="col-12 col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="80">
-          <div class="card card-member h-100 text-center">
-            <img src="img/javibateria.jpg" class="card-img-top rounded-circle p-3 img-fluid" alt="Cremona, Javier" loading="lazy">
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card card-member text-center">
+            <img src="img/javibateria.jpg" class="card-img-top rounded-circle p-3" alt="Cremona, Javier">
             <div class="card-body">
-              <h3 class="h5 fw-bold mb-1">Cremona, Javier</h3>
-              <p class="mb-0 text-muted-70">Batería</p>
+              <h3 class="h5 fw-bold">Cremona, Javier</h3>
+              <p>Batería</p>
             </div>
           </div>
         </div>
-
       </div>
     </div>
   </section>
@@ -143,15 +142,10 @@
   <section id="biografia" class="py-5 section-dark" data-aos="fade-up">
     <div class="container">
       <h2 class="section-title">Biografía</h2>
-      <p>
-        <strong>Efecto Residual</strong> es una banda de rock oriunda de <strong>Las Toscas, Santa Fe</strong>, que comenzó su recorrido musical el
-        <strong>22 de septiembre de 2022</strong>, con una presentación en un evento solidario que marcó su debut ante el público. Desde ese momento,
-        el proyecto fue tomando fuerza y forma, consolidándose como una propuesta auténtica dentro del circuito regional.
-      </p>
-      <p>
-        Su estilo se basa principalmente en el <strong>rock nacional argentino</strong>, con un <strong>tributo especial a Soda Stereo</strong>, sumando también
-        <strong>covers de clásicos nacionales e internacionales</strong> que aportan variedad y energía a cada show.
-      </p>
+      <p><strong>Efecto Residual</strong> es una banda de rock oriunda de <strong>Las Toscas, Santa Fe</strong>, que comenzó su recorrido musical el
+      <strong>22 de septiembre de 2022</strong>, con una presentación en un evento solidario que marcó su debut ante el público.</p>
+      <p>Su estilo se basa principalmente en el <strong>rock nacional argentino</strong>, con un <strong>tributo especial a Soda Stereo</strong>, sumando también
+      <strong>covers de clásicos nacionales e internacionales</strong> que aportan variedad y energía a cada show.</p>
     </div>
   </section>
 
@@ -159,176 +153,111 @@
   <section id="galeria" class="py-5 bg-darker" data-aos="fade-up">
     <div class="container">
       <h2 class="section-title text-center mb-4">Galería</h2>
-
-      <!-- Carrusel: centrado y con max-width para que no corte tanto -->
       <div class="mx-auto" style="max-width:1200px;">
         <div id="carouselGaleria" class="carousel slide carousel-fade mb-5" data-bs-ride="carousel" data-bs-interval="5000">
           <div class="carousel-inner rounded shadow">
-            <div class="carousel-item active">
-              <img src="img/foto 3.jpg" class="d-block w-100 img-fluid" alt="Foto 1 banda">
-            </div>
-            <div class="carousel-item">
-              <img src="img/foto 1.jpg" class="d-block w-100 img-fluid" alt="Foto 2 banda" loading="lazy">
-            </div>
-            <div class="carousel-item">
-              <img src="img/foto 10.jpg" class="d-block w-100 img-fluid" alt="Foto 3 banda" loading="lazy">
-            </div>
-            <div class="carousel-item">
-              <img src="img/foto 8.jpg" class="d-block w-100 img-fluid" alt="Foto 4 banda" loading="lazy">
-            </div>
+            <div class="carousel-item active"><img src="img/foto 3.jpg" class="d-block w-100" alt="Foto 1 banda"></div>
+            <div class="carousel-item"><img src="img/foto 1.jpg" class="d-block w-100" alt="Foto 2 banda"></div>
+            <div class="carousel-item"><img src="img/foto16.jpg" class="d-block w-100" alt="Foto 3 banda"></div>
+            <div class="carousel-item"><img src="img/foto15.jpg" class="d-block w-100" alt="Foto 4 banda"></div>
           </div>
-
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselGaleria" data-bs-slide="prev" aria-label="Anterior">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselGaleria" data-bs-slide="next" aria-label="Siguiente">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          </button>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselGaleria" data-bs-slide="prev"><span class="carousel-control-prev-icon"></span></button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselGaleria" data-bs-slide="next"><span class="carousel-control-next-icon"></span></button>
         </div>
       </div>
-
-      <!-- Grilla de fotos (abajo) -->
       <div class="row g-3">
-        <div class="col-6 col-md-4 col-lg-3">
-          <img src="img/foto 2.jpg" class="img-fluid rounded shadow-sm" alt="Foto 1 banda" loading="lazy">
-        </div>
-        <div class="col-6 col-md-4 col-lg-3">
-          <img src="img/DSC_3008.jpg" class="img-fluid rounded shadow-sm" alt="Foto 2 banda" loading="lazy">
-        </div>
-        <div class="col-6 col-md-4 col-lg-3">
-          <img src="img/DSC_3139.jpg" class="img-fluid rounded shadow-sm" alt="Foto 3 banda" loading="lazy">
-        </div>
-        <div class="col-6 col-md-4 col-lg-3">
-          <img src="img/foto 5.jpg" class="img-fluid rounded shadow-sm" alt="Foto 4 banda" loading="lazy">
-        </div>
+        <div class="col-6 col-md-4 col-lg-3"><img src="img/foto 2.jpg" class="img-fluid rounded shadow-sm" alt=""></div>
+        <div class="col-6 col-md-4 col-lg-3"><img src="img/DSC_3008.jpg" class="img-fluid rounded shadow-sm" alt=""></div>
+        <div class="col-6 col-md-4 col-lg-3"><img src="img/DSC_3139.jpg" class="img-fluid rounded shadow-sm" alt=""></div>
+        <div class="col-6 col-md-4 col-lg-3"><img src="img/foto 5.jpg" class="img-fluid rounded shadow-sm" alt=""></div>
       </div>
     </div>
   </section>
 
-  <!-- VIDEOS DESTACADOS -->
+  <!-- VIDEOS -->
   <section id="videos" class="py-5 section-dark" data-aos="fade-up">
     <div class="container">
       <h2 class="section-title text-center mb-4">Videos</h2>
       <div class="row g-4 justify-content-center">
-
-        <!-- Video 1 (no cambiar link) -->
         <div class="col-12 col-md-6 col-lg-4 video-card">
-          <a href="https://www.youtube.com/watch?v=_O_uBKa0_wU" target="_blank" rel="noopener" aria-label="Ver video en YouTube">
-            <img src="https://img.youtube.com/vi/_O_uBKa0_wU/hqdefault.jpg" alt="Efecto Residual - Video 1" class="img-fluid rounded shadow-sm w-100">
-            <span class="video-overlay">▶ Ver en YouTube</span>
-          </a>
+          <a href="https://www.youtube.com/watch?v=_O_uBKa0_wU" target="_blank"><img src="https://img.youtube.com/vi/_O_uBKa0_wU/hqdefault.jpg" class="img-fluid rounded shadow-sm"><span class="video-overlay">▶</span></a>
         </div>
-
-        <!-- Video 2 (no cambiar link) -->
         <div class="col-12 col-md-6 col-lg-4 video-card">
-          <a href="https://www.youtube.com/watch?v=qmUQWlHr-GY" target="_blank" rel="noopener" aria-label="Ver video en YouTube">
-            <img src="https://img.youtube.com/vi/qmUQWlHr-GY/hqdefault.jpg" alt="Efecto Residual - Video 2" class="img-fluid rounded shadow-sm w-100">
-            <span class="video-overlay">▶ Ver en YouTube</span>
-          </a>
+          <a href="https://www.youtube.com/watch?v=qmUQWlHr-GY" target="_blank"><img src="https://img.youtube.com/vi/qmUQWlHr-GY/hqdefault.jpg" class="img-fluid rounded shadow-sm"><span class="video-overlay">▶</span></a>
         </div>
-
+        <div class="col-12 col-md-6 col-lg-4 video-card">
+          <a href="https://www.youtube.com/shorts/9aW-x2bu70c" target="_blank"><img src="https://img.youtube.com/vi/9aW-x2bu70c/hqdefault.jpg" class="img-fluid rounded shadow-sm"><span class="video-overlay">▶</span></a>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- PRÓXIMAS FECHAS -->
+  <!-- FECHAS -->
   <section id="fechas" class="py-5 section-dark" data-aos="fade-up">
     <div class="container">
       <h2 class="section-title text-center mb-4">Próximas fechas</h2>
-      <div class="event-card">
-        <strong>📍 Lugar:</strong> A definir <br>
-        <strong>📅 Fecha:</strong> Muy pronto
-      </div>
+      <div class="event-card"><strong>📍 Lugar:</strong> A definir <br><strong>📅 Fecha:</strong> Muy pronto</div>
     </div>
   </section>
 
   <!-- PROPUESTA -->
   <section id="propuesta" class="py-5 section-dark" data-aos="fade-up">
-    <div class="container">
-      <h2 class="section-title text-center">Propuesta musical</h2>
-      <p class="lead text-center mx-auto max-700">Show de ~1 hora con las canciones más populares de Soda Stereo y Gustavo Cerati, más clásicos del rock nacional e internacional.</p>
-      <div class="text-center mt-3">
-        <a href="#contacto" class="btn btn-outline-accent btn-lg">Solicitar press-kit / rider técnico</a>
-      </div>
+    <div class="container text-center">
+      <h2 class="section-title">Propuesta musical</h2>
+      <p class="lead mx-auto max-700">Show de ~1 hora con las canciones más populares de Soda Stereo y Gustavo Cerati, más clásicos del rock nacional e internacional.</p>
+      <a href="#contacto" class="btn btn-outline-accent btn-lg mt-3">Solicitar press-kit / rider técnico</a>
     </div>
   </section>
 
-  <!-- CONTACTO / REDES -->
+  <!-- CONTACTO -->
   <section id="contacto" class="py-5 section-dark" data-aos="fade-up">
     <div class="container">
       <h2 class="section-title text-center mb-4">Contrataciones & Redes</h2>
-      <div class="row justify-content-center g-4">
+      <div class="row g-4">
         <div class="col-md-6">
-          <div class="card h-100">
-            <div class="card-body">
-              <h3 class="h5 fw-bold mb-3">Contacto directo</h3>
-              <ul class="list-unstyled mb-0">
-                <li class="mb-2">📞 Teléfono / WhatsApp: <a class="link-accent" href="https://wa.me/543482446311" target="_blank" rel="noopener">3482 446311</a></li>
-                <li class="mb-2">📧 Email: <a class="link-accent" href="mailto:javier.cremona@gmail.com">javier.cremona@gmail.com</a></li>
-                <li class="mb-2">📧 Email: <a class="link-accent" href="mailto:efectoresidual.lt@gmail.com">efectoresidual.lt@gmail.com</a></li>
-                <li class="mb-2">📸 Instagram: <a class="link-accent" href="https://instagram.com/efecto_residual" target="_blank" rel="noopener">@efecto_residual</a></li>
-              </ul>
-            </div>
-          </div>
+          <div class="card h-100"><div class="card-body">
+            <h3 class="h5 fw-bold mb-3">Contacto directo</h3>
+            <ul class="list-unstyled">
+              <li>📞 <a href="https://wa.me/543482446311" target="_blank">3482 446311</a></li>
+              <li>📧 <a href="mailto:javier.cremona@gmail.com">javier.cremona@gmail.com</a></li>
+              <li>📧 <a href="mailto:efectoresidual.lt@gmail.com">efectoresidual.lt@gmail.com</a></li>
+            </ul>
+          </div></div>
         </div>
-
         <div class="col-md-6">
-          <div class="card h-100 text-center">
-            <div class="card-body">
-              <h3 class="h5 fw-bold mb-3">Seguinos</h3>
-              <div class="d-flex justify-content-center gap-3">
-                <a href="https://instagram.com/efecto_residual" target="_blank" aria-label="Instagram" class="social-btn"><i class="fab fa-instagram fa-lg"></i></a>
-                <a href="https://www.facebook.com/" target="_blank" aria-label="Facebook" class="social-btn"><i class="fab fa-facebook fa-lg"></i></a>
-                <a href="https://www.tiktok.com/" target="_blank" aria-label="TikTok" class="social-btn"><i class="fab fa-tiktok fa-lg"></i></a>
-              </div>
+          <div class="card h-100 text-center"><div class="card-body">
+            <h3 class="h5 fw-bold mb-3">Seguinos</h3>
+            <div class="d-flex justify-content-center gap-3 fs-3">
+              <a href="https://instagram.com/efecto_residual" target="_blank"><i class="fab fa-instagram"></i></a>
+              <a href="https://www.facebook.com/share/1CFox1vGfb/" target="_blank"><i class="fab fa-facebook"></i></a>
+              <a href="https://www.tiktok.com/@efecto.residual?_t=ZM-8zjeRG1PwDY&_r=1" target="_blank"><i class="fab fa-tiktok"></i></a>
             </div>
-          </div>
+          </div></div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Footer -->
   <footer class="py-4 bg-black-true text-center text-muted-70">
     <small>© <span id="y"></span> Efecto Residual — Sitio oficial</small>
   </footer>
 
-  <!-- Botón flotante WhatsApp (Font Awesome icon) -->
-  <a href="https://wa.me/543482446311" class="whatsapp-float" target="_blank" aria-label="WhatsApp">
-    <i class="fab fa-whatsapp fa-2x"></i>
-  </a>
+  <!-- WhatsApp flotante -->
+  <a href="https://wa.me/543482446311" class="whatsapp-float" target="_blank"><i class="fab fa-whatsapp"></i></a>
 
-  <!-- Botón volver arriba -->
-  <button id="btn-top" aria-label="Volver arriba"><i class="fas fa-arrow-up"></i></button>
+  <!-- Volver arriba -->
+  <button id="btn-top"><i class="fas fa-arrow-up"></i></button>
 
   <!-- Scripts -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
   <script>
-    // Año en footer
-    document.getElementById('y').textContent = new Date().getFullYear();
-
-    // Init AOS
-    AOS.init({ once: true, duration: 700 });
-
-    // Loader
-    window.addEventListener("load", () => {
-      const loader = document.getElementById("loader");
-      if (loader) loader.style.display = "none";
-    });
-
-    // Botón volver arriba
-    const btnTop = document.getElementById("btn-top");
-    window.addEventListener("scroll", () => {
-      if (!btnTop) return;
-      btnTop.style.display = window.scrollY > 300 ? "block" : "none";
-    });
-    if (btnTop) {
-      btnTop.addEventListener("click", () => window.scrollTo({top:0,behavior:"smooth"}));
-    }
-
-    // Ensure carousel uses fade nicely (Bootstrap handles data attributes)
-    // no extra JS needed for autoplay because data-bs-interval is set in HTML
+    document.getElementById("y").textContent = new Date().getFullYear();
+    AOS.init({ once:true, duration:700 });
+    window.addEventListener("load",()=>document.getElementById("loader").style.display="none");
+    const btnTop=document.getElementById("btn-top");
+    window.addEventListener("scroll",()=>btnTop.style.display=window.scrollY>300?"block":"none");
+    btnTop.addEventListener("click",()=>window.scrollTo({top:0,behavior:"smooth"}));
   </script>
 </body>
 </html>
