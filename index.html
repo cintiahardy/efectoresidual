@@ -169,7 +169,7 @@ const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.targ
 document.querySelectorAll('.rv').forEach(s=>io.observe(s));
 // menú, volver arriba, año
 $('#nt').onclick=()=>$('#nl').classList.toggle('open');$('#nl').onclick=e=>{if(e.target.tagName=='A')$('#nl').classList.remove('open')};
-const top=$('#top');addEventListener('scroll',()=>top.style.display=scrollY>300?'grid':'none',{passive:true});top.onclick=()=>scrollTo({top:0,behavior:'smooth'});
+const btnTop=$('#top');addEventListener('scroll',()=>btnTop.style.display=scrollY>300?'grid':'none',{passive:true});btnTop.onclick=()=>scrollTo({top:0,behavior:'smooth'});
 $('#y').textContent=new Date().getFullYear();
 // consulta por WhatsApp con tu lista de temas
 $('#fm').onsubmit=e=>{e.preventDefault();const t=[...document.querySelectorAll('#songs input:checked')].map(i=>i.value).join(', ')||'a definir';
